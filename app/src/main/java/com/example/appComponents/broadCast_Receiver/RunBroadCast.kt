@@ -1,6 +1,5 @@
-package com.example.AppComponents.BroadCast_Reciever
+package com.example.appComponents.broadCast_Receiver
 
-import android.bluetooth.BluetoothAdapter
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent

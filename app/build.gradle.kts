@@ -2,11 +2,13 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.compose.compiler)
+
+    id("com.google.devtools.ksp")
 }
 
 android {
-    namespace = "com.example.AppComponents"
-    compileSdk = 35
+    namespace = "com.example.appComponents"
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.AppComponents"
@@ -66,4 +68,11 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.accompanist.permissions)
     implementation(libs.androidx.work.runtime)
+
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
+    implementation(libs.androidx.material.icons.extended)
+
 }

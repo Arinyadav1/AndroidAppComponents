@@ -1,5 +1,7 @@
-package com.example.AppComponents
+package com.example.appComponents
 
+import android.content.Loader
+import android.database.Cursor
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,10 +9,10 @@ import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.RequiresApi
-import com.example.AppComponents.Services.RunService
-import com.example.AppComponents.Services.RunWorkManager
+import androidx.loader.app.LoaderManager
+import com.example.appComponents.contentResolver.ContentResolver
 
-class MainActivity : ComponentActivity() {
+class MainActivity : ComponentActivity(){
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,8 +26,8 @@ class MainActivity : ComponentActivity() {
         setContent {
 //            RunService()
 //            RunBroadCast()
-//            ContentResolver(this)
-            RunWorkManager(this)
+            ContentResolver(this)
+//            RunWorkManager(this)
 
        }
     }

@@ -1,20 +1,14 @@
-package com.example.AppComponents.Services
+package com.example.appComponents.services
 
-import android.app.Notification
-import android.app.PendingIntent
 import android.app.Service
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.IBinder
-import androidx.core.app.NotificationCompat
-import com.example.AppComponents.MainActivity
-import com.example.AppComponents.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlin.jvm.java
 
 
 class MyServices : Service() {

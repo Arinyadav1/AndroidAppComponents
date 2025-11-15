@@ -33,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".Services.MyServices"
+        <service android:name=".services.MyServices"
             android:foregroundServiceType="dataSync"
             />
     </application>

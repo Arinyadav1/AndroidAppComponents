@@ -1,8 +1,7 @@
-package com.example.AppComponents.Services
+package com.example.appComponents.services
 
 
 import android.annotation.SuppressLint
-import android.app.Application
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -11,10 +10,9 @@ import android.content.Context
 import android.content.Intent
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import androidx.core.app.ServiceCompat.startForeground
 import androidx.core.content.ContextCompat
-import com.example.AppComponents.MainActivity
-import com.example.AppComponents.R
+import com.example.appComponents.MainActivity
+import com.example.appComponents.R
 
 
 @SuppressLint("WrongConstant")
